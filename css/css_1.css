@@ -22,10 +22,7 @@ h1 {
   color: #132c33;
 }
 .skill-img {
-  float: left;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
   width: 150px;
   height: 150px;
 }
@@ -36,10 +33,10 @@ h2 {
 }
 h3 {
   font-family: "Montserrat", sans-serif;
+  padding: 0;
 }
 p {
   font-family: "Merriweather", serif;
-  text-align: center;
   color: #787b7c;
 }
 #mountains {
@@ -72,14 +69,26 @@ p {
   z-index: -1;
 }
 .middle-container {
+  display: block;
+  position: relative;
+  padding-top: 100px;
+  position: relative;
+  padding-bottom: 500px;
+  z-index: -1;
 }
 
 .bottom-container {
+  display: block;
+  position: relative;
+  padding-top: 100px;
+  position: relative;
+  padding-bottom: 100px;
+  z-index: -1;
 }
 
 .contributes {
   font-size: 9px;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .img-icon {
@@ -105,7 +114,6 @@ p {
   background-color: #8aa874;
   width: 100%;
   height: 100%;
-  border-radius: ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +127,6 @@ header {
   z-index: 1;
   position: fixed;
   background-color: #132c33;
-  border-radius: ;
   width: 100%;
   height: 90px;
   top: 0;
@@ -131,7 +138,27 @@ nav {
 
 .skill-row {
   width: 50%;
+  position: relative;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  padding: 60px 0 60px 0;
+}
+
+.float-left {
+  float: left;
+  padding-right: 50px;
+}
+.float-right {
+  float: right;
+  padding-left: 50px;
+}
+
+.skill-text {
+  position: absolute;
+  bottom: -700px;
+}
+
+.skill-p {
+  text-align: left;
 }
