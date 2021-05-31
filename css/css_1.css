@@ -18,6 +18,7 @@ h4,
 h5,
 h6,
 p {
+  line-height: 2;
 }
 h1 {
   padding: 0;
@@ -73,27 +74,31 @@ p {
 }
 .top-container {
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   z-index: -1;
 }
 .middle-container {
   display: block;
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   z-index: -1;
 }
 
 .bottom-container {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;
   position: relative;
-  margin-bottom: 100px;
-  z-index: -1;
+  margin-bottom: 50px;
 }
 
 .contributes {
@@ -148,7 +153,7 @@ nav {
 }
 
 .skill-row {
-  min-height: 230px;
+  min-height: 240px;
   width: 50%;
   position: relative;
   text-align: left;
@@ -158,21 +163,23 @@ nav {
 }
 
 .float-left {
-  border-radius: 3px;
-  border: 2px solid #8aa874;
-  height: 220px;
+  /* border-radius: 3px; */
+  /* border: 2px solid #8aa874; */
+  height: 230px;
   width: 220px;
   position: relative;
   float: left;
+  padding: 10px;
 }
 .float-right {
-  border-radius: 3px;
-  border: 3px solid #8aa874;
+  /* border-radius: 3px; */
+  /* border: 3px solid #8aa874; */
   position: relative;
   float: right;
   margin-bottom: 20px;
-  height: 220px;
+  height: 230px;
   width: 220px;
+  padding: 10px;
 }
 .skill-text {
   position: absolute;
@@ -182,4 +189,23 @@ nav {
 
 .skill-p {
   text-align: left;
+}
+
+.footer-link {
+  z-index: 1;
+  position: relative;
+  bottom: -3px;
+  padding: 15px;
+}
+
+#bottom-tag {
+  position: absolute;
+  margin: -10px;
+  top: 0;
+}
+
+#the-end {
+  position: absolute;
+  bottom: -40px;
+  font-size: 12px;
 }
