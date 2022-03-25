@@ -254,3 +254,12 @@ nav {
     padding:30px !important;
 }
 
+._center{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+._padd_top_10{
+    padding-top:10px !important;
+}

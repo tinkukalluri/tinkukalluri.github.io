@@ -7,10 +7,13 @@
 	<link rel="icon" href="images/logo.png" />
 	<script>
 		$(function () {
-			$("#includedContent").load("layout.html");
+			$("#includednav").load("nav.html");
 		});
 		$(function () {
 			$("#head").load("head.html");
+		});
+		$(function () {
+			$("#footer").load("footer.html");
 		});
 	</script>
 
@@ -18,7 +21,7 @@
 </head>
 
 <body>
-	<div id="includedContent"></div>
+	<div id="includednav"></div>
 	<!--================Header Menu Area =================-->
 
 
@@ -29,34 +32,33 @@
 		<div class="container box_1620">
 			<div class="banner_inner d-flex align-items-center">
 				<div class="banner_content">
-					<div class="media">
-						<div class="d-flex">
-							<img src="img/personal.JPG" width=500 heigh=1000 alt="">
-						</div>
-						<div class="media-body">
-							<div class="personal_text">
-								<h6>Hello Everybody, i am</h6>
-								<h3>K Abhinandan Kumar</h3>
-								<h4>Full stack web Developer</h4>
-								<p>I love solving problems using Machine Learning and represent Data in a meaningful
-									way. Also, I like pushing myself and taking up new challenges.</p>
-								<ul class="list basic_info">
-									<!-- <li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
+					<div class="container">
+						<div class="row">
+							<img class="col-md-6" src="img/personal.JPG" width=500 heigh=1000 alt="">
+							<div class="col-md-6  _center">
+								<div class="personal_text _padd_top_10">
+									<h6>Hello Everybody, i am</h6>
+									<h3>K Abhinandan Kumar</h3>
+									<h4>Full stack web Developer</h4>
+									<p>I love solving problems using Machine Learning and represent Data in a meaningful
+										way. Also, I like pushing myself and taking up new challenges.</p>
+									<ul class="list basic_info">
+										<!-- <li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
 										<li><a href="#"><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a></li> -->
-									<li><a href="mailto:abhinandankalluri@gmail.com"><i
-												class="lnr lnr-envelope"></i>abhinandankalluri@gmail.com</a></li>
-								</ul>
-								<ul class="list personal_social">
-									<li><a href="https://github.com/tinkukalluri" target="_blank"><i
-												class="fab fa-github fa-2x"></i></a></li>
-
-									<li><a href="https://www.linkedin.com/in/abhinandan-kumar-kalluri-497b95203/"
-											target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-									<li><a href="https://twitter.com/tinkukalluri198" target="_blank"><i
-												class="fab fa-twitter fa-2x"></i></a></li>
-									<li><a href="https://www.instagram.com/tinkukalluri/" target="_blank"><i
-												class="fab fa-instagram fa-2x"></i></a></li>
-								</ul>
+										<li><a href="mailto:abhinandankalluri@gmail.com"><i
+													class="lnr lnr-envelope"></i>abhinandankalluri@gmail.com</a></li>
+									</ul>
+									<ul class="list personal_social">
+										<li><a href="https://github.com/tinkukalluri" target="_blank"><i
+													class="fab fa-github fa-2x"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/abhinandan-kumar-kalluri-497b95203/"
+												target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+										<li><a href="https://twitter.com/tinkukalluri198" target="_blank"><i
+													class="fab fa-twitter fa-2x"></i></a></li>
+										<li><a href="https://www.instagram.com/tinkukalluri/" target="_blank"><i
+													class="fab fa-instagram fa-2x"></i></a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -72,11 +74,17 @@
 			<div class="row welcome_inner">
 				<div class="col-lg-6">
 					<div class="welcome_text">
-						<h4>About Myself</h4>
+						<!-- <h4>About Myself</h4>
 						<p>I'm pursuing compuer science Engineering at St. Marys's engineering college, Hyderabad. I am
 							always ready to have new experiences, meet new people and learn new things. I find the idea
-							of creating value for people and impacting the world through my work gratifying.</p>
-
+							of creating value for people and impacting the world through my work gratifying.</p> -->
+						<h4>Career Objective</h4>
+						<p>A Computer Science student who is seeking to find the opportunity
+							to work in a fun and challenging working environment that will encourage
+							me to improve and learn new and nesessary skills as well as be motivated by the
+							company to do my best for the sake of helping myself and the company advancement in the
+							software engineering industry
+						</p>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -251,84 +259,10 @@
 		</div>
 	</section>
 
+	<div id="footer"></div>
 
 
-	<!--================Footer Area =================-->
-	<footer class="footer_area _p_30">
-		<div class="container p_30">
-			<div class="row footer_inner">
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f_widget ab_widget">
-						<div class="f_title">
-							<h3>About Me</h3>
-						</div>
-						<p>Do you want to be even more successful? Learn to love learning and growth. The more effort
-							you put into improving your skills, the better you get.</p>
-
-					</aside>
-				</div>
-				<div class="col-lg-5 col-sm-6">
-					<!-- <aside class="f_widget news_widget">
-        					<div class="f_title">
-        						<h3>Newsletter</h3>
-        					</div>
-        					<p>Stay updated with our latest trends</p>
-        					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
-                            </div>
-        				</aside> -->
-				</div>
-				<div class="col-lg-2">
-					<aside class="f_widget social_widget">
-						<div class="f_title">
-							<h3>Follow Me Here</h3>
-						</div>
-
-						<ul class="list">
-							<li class="_padd"><a href="https://github.com/tinkukalluri" target="_blank"><i
-										class="fab fa-github fa-2x"></i></a></li>
-							<li class="_padd"><a href="https://www.linkedin.com/in/abhinandan-kumar-kalluri-497b95203/"
-									target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-							<li class="_padd"><a href="https://twitter.com/tinkukalluri198" target="_blank"><i
-										class="fab fa-twitter fa-2x"></i></a></li>
-							<li class="_padd"><a href="https://www.instagram.com/tinkukalluri/" target="_blank"><i
-										class="fab fa-instagram fa-2x"></i></a></li>
-						</ul>
-					</aside>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-
-
-
-
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope.pkgd.min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="js/theme.js"></script>
 </body>
+
 
 </html>
