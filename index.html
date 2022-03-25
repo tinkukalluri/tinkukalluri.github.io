@@ -1,74 +1,334 @@
+<!doctype html>
 <html lang="en">
 
 <head>
-    <link rel="icon" href="images/logo.png" />
-    <link rel="stylesheet" href="bootstrap/bootstrap_mod.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(function() {
-            $("#includedContent").load("layout.html");
-        });
-        $(function() {
-            $("#head").load("head.html");
-        });
-    </script>
-    <div id="head"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="icon" href="images/logo.png" />
+	<script>
+		$(function () {
+			$("#includedContent").load("layout.html");
+		});
+		$(function () {
+			$("#head").load("head.html");
+		});
+	</script>
+
+	<div id="head"></div>
 </head>
 
 <body>
-    <!-- #1 including laout.html with id -->
-    <div id="includedContent"></div>
-    <div class="top-container">
-        <img src="images/AdobeStock_86094026_top.jpeg" alt="mountains" id="mountains" />
-        <h1 id="abhi" style="font-size: 5.265rem;">
-            Hello I'm Abhinandan Kumar
-        </h1>
-        <p>
-            I am a self-motivated and self-taught Developer who likes to solve problems.
-        </p>
-    </div>
-    <!-- <img src="images/aeroplain.jpg" alt="aeroplain" id="aeroplain">-->
-
-    <div class="container" id="skills">
-
-    </div>
-    <div class="container" id="projects">
-
-        <h3>PROGRAMMING PROJECTS</h3>
-        <p>#1 GroupListen - Group of people control the music they want to listen A Web Application which lets the people in group to decide whether the Current music playing should continue or skip to next music using Spotify API's - using Django framework
-            and python for backend and React, HTML, CSS, JavaScript for frontend Development.</p>
+	<div id="includedContent"></div>
+	<!--================Header Menu Area =================-->
 
 
-        <p>#2 Bookmycheckup - shows you hospitals open for you and lets you make an appointment A Web Application which lets you search for a hospital near you and make an Appointment with the doctor and specialist of your choice using hospitals API's -
-            HTML, CSS, React, JavaScript, Node.js, Express</p>
+	<!--================Header Menu Area =================-->
+
+	<!--================Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="container box_1620">
+			<div class="banner_inner d-flex align-items-center">
+				<div class="banner_content">
+					<div class="media">
+						<div class="d-flex">
+							<img src="img/personal.JPG" width=500 heigh=1000 alt="">
+						</div>
+						<div class="media-body">
+							<div class="personal_text">
+								<h6>Hello Everybody, i am</h6>
+								<h3>K Abhinandan Kumar</h3>
+								<h4>Full stack web Developer</h4>
+								<p>I love solving problems using Machine Learning and represent Data in a meaningful
+									way. Also, I like pushing myself and taking up new challenges.</p>
+								<ul class="list basic_info">
+									<!-- <li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
+										<li><a href="#"><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a></li> -->
+									<li><a href="mailto:abhinandankalluri@gmail.com"><i
+												class="lnr lnr-envelope"></i>abhinandankalluri@gmail.com</a></li>
+								</ul>
+								<ul class="list personal_social">
+									<li><a href="https://github.com/tinkukalluri" target="_blank"><i
+												class="fab fa-github fa-2x"></i></a></li>
+
+									<li><a href="https://www.linkedin.com/in/abhinandan-kumar-kalluri-497b95203/"
+											target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+									<li><a href="https://twitter.com/tinkukalluri198" target="_blank"><i
+												class="fab fa-twitter fa-2x"></i></a></li>
+									<li><a href="https://www.instagram.com/tinkukalluri/" target="_blank"><i
+												class="fab fa-instagram fa-2x"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Home Banner Area =================-->
+
+	<!--================Welcome Area =================-->
+	<section class="welcome_area _p_30">
+		<div class="container">
+			<div class="row welcome_inner">
+				<div class="col-lg-6">
+					<div class="welcome_text">
+						<h4>About Myself</h4>
+						<p>I'm pursuing compuer science Engineering at St. Marys's engineering college, Hyderabad. I am
+							always ready to have new experiences, meet new people and learn new things. I find the idea
+							of creating value for people and impacting the world through my work gratifying.</p>
+
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="welcome_text">
+						<h4>My Skills</h4>
+						<aside class="f_widget social_widget">
+							<div class="f_title">
+								<h3>Follow Me Here</h3>
+							</div>
+							<ul class="list">
+								<i class="fab fa-python fa-3x _padd"></i>
+								<i class="fab fa-js-square fa-3x _padd"></i>
+								<i class="fab fa-react fa-3x _padd"></i>
+								<i class=" fab fa-css3 fa-3x _padd"></i>
+								<i class="fab fa-html5 fa-3x _padd"></i>
+							</ul>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Welcome Area =================-->
+
+	<!--================My Tabs Area =================-->
+	<section class="mytabs_area p_120">
+		<div class="container">
+			<div class="tabs_inner">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+
+					<li class="nav-item">
+						<a class="nav-link" id="education" data-toggle="tab" href="#profile" role="tab"
+							aria-controls="profile" aria-selected="false">My Education</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<ul class="list">
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p>2019 to present</p>
+									</div>
+									<div class="media-body">
+										<h4>St. Mary's engineering college, Hyderabad</h4>
+										<p>Graduation <br />Computer Science Engineering</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p>2019 to present</p>
+									</div>
+									<div class="media-body">
+										<h4>Udemy & youtube</h4>
+										<p>A bunch of Courses.<br />On Python, ML, Android Development, Web Development
+										</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p class="p-12">2017 to 2019</p>
+									</div>
+									<div class="media-body">
+										<h4>Narayana junior college</h4>
+										<p>Intermediate<br />Mathematics physics chemistry(MPC)<br /></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex _padd_2">
+										<p class="p-12">2017</p>
+										<span></span>
+									</div>
+									<div class="media-body">
+										<h4>ST. Thomas High School</h4>
+										<p>Schooling<br />SSC</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div id="projects"></div>
+		</div>
+	</section>
+
+	<!--================End My Tabs Area =================-->
+
+	<section class="home_gallery_area p_120">
+		<div class="container">
+			<div class="main_title">
+				<h2>My Latest Projects</h2>
+				<p>Learning the theory is good, but applying your knowledge on a project is AWESOME!!</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6 ">
+					<div class=" h_gallery_item">
+						<div class="g_img_item">
+							<img class="img-fluid" src="images/project_img/play_party.png" alt="Play Party">
+							<a class="light" href="https://github.com/tinkukalluri/GroupListen" target="_blank"><img
+									class="img-fluid" src="img/gallery/icon.png" alt=""></a>
+						</div>
+						<div class="g_item_text">
+							<h4>Play Party</h4>
+							<h4><a href="https://github.com/tinkukalluri/GroupListen" target="_blank">Show Code</a></h4>
+							<p>It is a new way for people to play music together in real time.Once a Play Party is
+								started,
+								participants can continue
+								listening to the current music or skip based on votes and interact with one another.
+								<br />
+								Used Spotify APIs, Django framework, Python for backend and React, HTML, CSS, JavaScript
+								for frontend Development.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 ">
+					<div class="h_gallery_item">
+						<div class="g_img_item">
+							<img class="img-fluid" src="images/project_img/vchat.png" alt="Vchat">
+							<a class="light" href="https://github.com/tinkukalluri/VChat" target="_blank"><img
+									src="img/gallery/icon.png" alt=""></a>
+						</div>
+						<div class="g_item_text">
+							<h4>VChat</h4>
+							<h4><a href="https://github.com/tinkukalluri/VChat" target="_blank">Show Code</a>
+							</h4>
+							<p>VChat is a cross-platform instant messaging web application that allows users to exchange
+								text messages.
+								<br />
+								Used Web socket protocol, more specifically channels API in django framework using
+								redis-channel API and redis database
+								to have a real-time chat experience.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 ">
+					<div class="h_gallery_item">
+						<div class="g_img_item">
+							<img class="img-fluid" src="images/project_img/facial_recognition.png" alt="">
+							<a class="light" href="https://github.com/tinkukalluri/Face_Recognization"
+								target="_blank"><img src="img/gallery/icon.png" alt=""></a>
+						</div>
+						<div class="g_item_text">
+							<h4>Face Recognition</h4>
+							<h4><a href="https://github.com/tinkukalluri/Face_Recognization" target="_blank">Show
+									Code</a></h4>
+							<p>Built face detection, mood recognition and face recognition web application using Deep
+								learning(neural networks) and js
+								face-API library.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</section>
 
 
-        <p>#3 Hospital Manager - DBMS based healthcare Portal An end to end Database focused portal for patient registration, organizing information(OR details) And fixing appointments - MySQL, Node.js, JavaScript, HTML, CSS, Bootstrap.
-        </p>
 
-    </div>
+	<!--================Footer Area =================-->
+	<footer class="footer_area _p_30">
+		<div class="container p_30">
+			<div class="row footer_inner">
+				<div class="col-lg-5 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h3>About Me</h3>
+						</div>
+						<p>Do you want to be even more successful? Learn to love learning and growth. The more effort
+							you put into improving your skills, the better you get.</p>
+
+					</aside>
+				</div>
+				<div class="col-lg-5 col-sm-6">
+					<!-- <aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Newsletter</h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside> -->
+				</div>
+				<div class="col-lg-2">
+					<aside class="f_widget social_widget">
+						<div class="f_title">
+							<h3>Follow Me Here</h3>
+						</div>
+
+						<ul class="list">
+							<li class="_padd"><a href="https://github.com/tinkukalluri" target="_blank"><i
+										class="fab fa-github fa-2x"></i></a></li>
+							<li class="_padd"><a href="https://www.linkedin.com/in/abhinandan-kumar-kalluri-497b95203/"
+									target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+							<li class="_padd"><a href="https://twitter.com/tinkukalluri198" target="_blank"><i
+										class="fab fa-twitter fa-2x"></i></a></li>
+							<li class="_padd"><a href="https://www.instagram.com/tinkukalluri/" target="_blank"><i
+										class="fab fa-instagram fa-2x"></i></a></li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
 
 
 
 
 
 
-
-    <div class="bottom-container">
-        <!-- <h2 id="bottom-tag">contact me@ </h2> -->
-        <a class="footer-link" href="https://www.linkedin.com/in/abhinandan-kumar-kalluri-497b95203/"><span><img
-          class="img-icon" src="images/linkedin.png" alt="linkdin" /></span></a>
-        <a class="footer-link" href="https://twitter.com/tinkukalluri198"><span><img class="img-icon"
-          src="images/twitter.png" alt="twitter" /></span></a>
-        <a class="footer-link" href="https://github.com/tinkukalluri"><span><img class="img-icon" src="images/github.png"
-          alt="github"></span>
-    </a>
-        <a class="footer-link" href="mailto:abhinandankalluri@gmail.com"><span><img class="img-icon" src="images/gmail.png"
-          alt="gmail"></span></a>
-        <p id="the-end">© 2018 Abhinandan kalluri.</p>
-    </div>
-
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope.pkgd.min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/theme.js"></script>
 </body>
-
 
 </html>

@@ -237,3 +237,20 @@ nav {
 .left-side {
     left: 0 !important;
 }
+
+.resume{
+    border-radius:12px;
+}
+
+._padd{
+    padding:6px;
+}
+
+._padd_2{
+    padding-right:250px !important;
+}
+
+._p_30{
+    padding:30px !important;
+}
+
