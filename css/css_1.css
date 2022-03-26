@@ -3,15 +3,15 @@
 }
 
 body {
-    position: relative;
+    /* position: relative;
     background: var(--background);
     font-family: "Merriweather", serif !important;
     /* padding: 0px;
     margin: 0px; */
     /* margin-top: 50px; */
-    border: 0px;
+    /* border: 0px;
     display: block;
-    z-index: 0;
+    z-index: 0;  */
 }
 
 h1 {
@@ -262,4 +262,10 @@ nav {
 
 ._padd_top_10{
     padding-top:10px !important;
+}
+
+
+._image_res{
+    width: 100!important;
+    height:auto !important;
 }
