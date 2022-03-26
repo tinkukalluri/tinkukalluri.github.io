@@ -266,6 +266,6 @@ nav {
 
 
 ._image_res{
-    width: 100!important;
+    width: 100% !important;
     height:auto !important;
 }
