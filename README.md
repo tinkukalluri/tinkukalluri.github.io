@@ -1,2 +1,2 @@
 # tinkukalluri.github.io
-portfolio
+portfolio-link : https://tinkukalluri.github.io/
